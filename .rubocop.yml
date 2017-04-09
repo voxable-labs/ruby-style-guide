@@ -4,3 +4,14 @@ AllCops:
 # Don't require copyright notices
 Style/Copyright:
   Enabled: false
+
+# Use braces for block delimiters in RSpec.
+Style/BlockDelimiters:
+  EnforcedStyle: semantic
+  FunctionalMethods:
+    - before
+    - let
+    - let!
+    - subject
+    - watch
+    - expect

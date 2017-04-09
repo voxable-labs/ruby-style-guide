@@ -1311,7 +1311,8 @@ condition](#safe-assignment-in-condition).
 
 * <a name="single-line-blocks"></a>
   Prefer `{...}` over `do...end` for single-line blocks.  Avoid using `{...}`
-  for multi-line blocks (multi-line chaining is always ugly). Always use
+  for multi-line blocks (multi-line chaining is always ugly), except in
+  RSpec source files, e.g., when using `before`, `let`, `subject`, etc. Always use
   `do...end` for "control flow" and "method definitions" (e.g. in Rakefiles and
   certain DSLs).  Avoid `do...end` when chaining.
 <sup>[[link](#single-line-blocks)]</sup>
