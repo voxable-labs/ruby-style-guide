@@ -1,5 +1,7 @@
 AllCops:
   EnabledByDefault: true
+  DisplayStyleGuide: true
+  StyleGuideBaseURL: https://github.com/voxable-labs/ruby-style-guide
 
 # Don't require copyright notices
 Style/Copyright:
