@@ -1,0 +1,6 @@
+AllCops:
+  EnabledByDefault: true
+
+# Don't require copyright notices
+Style/Copyright:
+  Enabled: false
