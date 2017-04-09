@@ -15,6 +15,15 @@ inherit_from:
   - https://raw.githubusercontent.com/voxable-labs/ruby-style-guide/master/.rubocop.yml
 ```
 
+You'll also want to add its cache file to your `.gitignore`:
+
+```
+# RuboCop config cache file
+.rubocop-https---raw-githubusercontent-com-voxable-labs-ruby-style-guide-master--rubocop-yml
+```
+
+If you need to bust this cache file to pick up the latest changes to the guide (which should happen automatically every 24 hours), you can simply delete the cache file from your project.
+
 ## Credits
 
 We didn't come up with all the rules out of nowhere. In fact, this repo started life as a fork of [:](https://github.com/bbatsov)'s excellent [`ruby-style-guide`](https://github.com/bbatsov/ruby-style-guide), with a few changes
