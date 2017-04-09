@@ -15,3 +15,8 @@ Style/BlockDelimiters:
     - subject
     - watch
     - expect
+
+# Ignore absence of method call parentheses in RSpec.
+Style/MethodCallWithArgsParentheses:
+  Exclude:
+    - spec/**/*.rb
