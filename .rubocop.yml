@@ -7,6 +7,10 @@ AllCops:
 Style/Copyright:
   Enabled: false
 
+# --||----------------------
+#   || RSpec
+# ==||======================
+
 # Use braces for block delimiters in RSpec.
 Style/BlockDelimiters:
   EnforcedStyle: semantic
@@ -20,5 +24,10 @@ Style/BlockDelimiters:
 
 # Ignore absence of method call parentheses in RSpec.
 Style/MethodCallWithArgsParentheses:
+  Exclude:
+    - spec/**/*.rb
+
+# Ignore block length in RSPec.
+Metrics/BlockLength:
   Exclude:
     - spec/**/*.rb
