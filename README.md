@@ -26,7 +26,7 @@ If you need to bust this cache file to pick up the latest changes to the guide (
 
 ## Credits
 
-We didn't come up with all the rules out of nowhere. In fact, this repo started life as a fork of [:](https://github.com/bbatsov)'s excellent [`ruby-style-guide`](https://github.com/bbatsov/ruby-style-guide), with a few changes
+We didn't come up with all the rules out of nowhere. In fact, this repo started life as a fork of [bbatsov](https://github.com/bbatsov)'s excellent [`ruby-style-guide`](https://github.com/bbatsov/ruby-style-guide), with a few changes
 that happen to suit our tastes.
 
 ## Table of Contents
