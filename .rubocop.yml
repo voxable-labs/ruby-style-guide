@@ -22,10 +22,11 @@ Style/BlockDelimiters:
     - watch
     - expect
 
-# Ignore absence of method call parentheses in RSpec.
+# Ignore absence of method call parentheses in RSpec and gemspecs.
 Style/MethodCallWithArgsParentheses:
   Exclude:
     - spec/**/*.rb
+    - *.gemspec
 
 # Ignore block length in RSPec.
 Metrics/BlockLength:
