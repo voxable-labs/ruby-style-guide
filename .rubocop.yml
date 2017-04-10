@@ -26,7 +26,7 @@ Style/BlockDelimiters:
 Style/MethodCallWithArgsParentheses:
   Exclude:
     - spec/**/*.rb
-    - *.gemspec
+    - ./*.gemspec
 
 # Ignore block length in RSPec.
 Metrics/BlockLength:
