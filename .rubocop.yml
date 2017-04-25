@@ -33,7 +33,7 @@ Metrics/BlockLength:
   Exclude:
     - spec/**/*.rb
 
-# Ignore hg methods
+# Ignore hg methods.
 Style/MethodCallWithArgsParentheses:
   IgnoredMethods:
     -button
@@ -41,7 +41,7 @@ Style/MethodCallWithArgsParentheses:
     -gallery
     -before_handler
 
-# Exclude hg blocks
+# Exclude hg blocks.
 Metrics/BlockLength:
   ExcludedMethods:
     -class_methods
