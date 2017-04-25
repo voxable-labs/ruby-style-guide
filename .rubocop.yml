@@ -39,6 +39,7 @@ Style/MethodCallWithArgsParentheses:
     -button
     -card
     -gallery
+    -before_handler
 
 #exclude hg blocks
 Metrics/BlockLength:
