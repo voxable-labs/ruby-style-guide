@@ -6,6 +6,15 @@ AllCops:
 # Don't require copyright notices
 Style/Copyright:
   Enabled: false
+  
+# --||----------------------
+#   || Rails
+# ==||======================
+
+# Don't require documentation for ActiveRecord migrations.
+Style/DocumentationMethod:
+  Exclude:
+    - db/migrate/*.rb
 
 # --||----------------------
 #   || RSpec
