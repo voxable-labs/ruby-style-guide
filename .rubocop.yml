@@ -56,7 +56,3 @@ Metrics/BlockLength:
     -class_methods
     -dynamic
     -gallery
-
-# Add project-specific overrides to a .rubocop.yml file.
-inherit_from:
-  - .rubocop-local.yml
