@@ -6,6 +6,11 @@ AllCops:
 # Don't require copyright notices
 Style/Copyright:
   Enabled: false
+  
+# Prefer keyword arguments to options hashes
+# https://github.com/voxable-labs/ruby-style-guide#no-optional-hash-params
+Style/OptionHash:
+  Enabled: true
 
 # --||----------------------
 #   || Rails
