@@ -20,6 +20,11 @@ Style/OptionHash:
 Style/DocumentationMethod:
   Exclude:
     - db/migrate/*.rb
+    
+# Don't measure class length for controllers.
+Metrics/ClassLength:
+  Exclude:
+    - ./app/bots/messenger_bot/controllers/**/*.rb
 
 # --||----------------------
 #   || RSpec
