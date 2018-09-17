@@ -2,7 +2,15 @@ AllCops:
   EnabledByDefault: true
   DisplayStyleGuide: true
   StyleGuideBaseURL: https://github.com/voxable-labs/voxable-style-guide
-
+  
+# Force table-style hash alignment.
+Layout/AlignHash:
+  EnforcedColonStyle: table
+  
+# Force equal sign alignment.
+Layout/ExtraSpacing:
+  ForceEqualSignAlignment: true
+  
 # Don't require copyright notices
 Style/Copyright:
   Enabled: false
@@ -16,19 +24,32 @@ Style/OptionHash:
 #   || Rails
 # ==||======================
 
-# Don't require documentation for ActiveRecord migrations.
-Style/DocumentationMethod:
-  Exclude:
-    - db/migrate/*.rb
-    
 # Don't measure class length for controllers.
 Metrics/ClassLength:
   Exclude:
     - ./app/bots/messenger_bot/controllers/**/*.rb
 
+# Don't require documentation for ActiveRecord migrations.
+Style/DocumentationMethod:
+  Exclude:
+    - db/migrate/*.rb
+
 # --||----------------------
 #   || RSpec
 # ==||======================
+
+# Ignore block length in RSPec.
+Metrics/BlockLength:
+  Exclude:
+    - spec/**/*.rb
+    
+
+# Exclude hg blocks.
+Metrics/BlockLength:
+  ExcludedMethods:
+    - class_methods
+    - dynamic
+    - gallery
 
 # Use braces for block delimiters in RSpec.
 Style/BlockDelimiters:
@@ -47,30 +68,10 @@ Style/MethodCallWithArgsParentheses:
     - spec/**/*.rb
     - ./*.gemspec
 
-# Ignore block length in RSPec.
-Metrics/BlockLength:
-  Exclude:
-    - spec/**/*.rb
-
 # Ignore hg methods.
 Style/MethodCallWithArgsParentheses:
   IgnoredMethods:
-    -button
-    -card
-    -gallery
-    -before_handler
-
-# Exclude hg blocks.
-Metrics/BlockLength:
-  ExcludedMethods:
-    -class_methods
-    -dynamic
-    -gallery
-    
-# Force equal sign alignment.
-Layout/ExtraSpacing:
-  ForceEqualSignAlignment: true
-  
-# Force table-style hash alignment.
-Layout/AlignHash:
-  EnforcedColonStyle: table
+    - button
+    - card
+    - gallery
+    - before_handler
