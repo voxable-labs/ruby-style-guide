@@ -70,3 +70,7 @@ Metrics/BlockLength:
 # Force equal sign alignment.
 Layout/ExtraSpacing:
   ForceEqualSignAlignment: true
+  
+# Force table-style hash alignment.
+Layout/AlignHash:
+  EnforcedColonStyle: table
