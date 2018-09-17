@@ -66,3 +66,7 @@ Metrics/BlockLength:
     -class_methods
     -dynamic
     -gallery
+    
+# Force equal sign alignment.
+Layout/ExtraSpacing:
+  ForceEqualSignAlignment: true
