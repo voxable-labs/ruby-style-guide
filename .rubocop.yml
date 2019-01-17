@@ -67,6 +67,9 @@ Style/MethodCallWithArgsParentheses:
   Exclude:
     - spec/**/*.rb
     - ./*.gemspec
+  IgnoredMethods:
+    - require
+    - raise
 
 # Ignore hg methods.
 Style/MethodCallWithArgsParentheses:
