@@ -62,7 +62,8 @@ Style/BlockDelimiters:
     - watch
     - expect
 
-# Ignore absence of method call parentheses in RSpec and gemspecs.
+# Ignore absence of method call parentheses in RSpec and gemspecs,
+# and ignore Heliogram methods.
 Style/MethodCallWithArgsParentheses:
   Exclude:
     - spec/**/*.rb
@@ -70,10 +71,6 @@ Style/MethodCallWithArgsParentheses:
   IgnoredMethods:
     - require
     - raise
-
-# Ignore hg methods.
-Style/MethodCallWithArgsParentheses:
-  IgnoredMethods:
     - button
     - card
     - gallery
