@@ -62,12 +62,13 @@ Style/BlockDelimiters:
     - watch
     - expect
 
-# Ignore absence of method call parentheses in RSpec and gemspecs,
-# and ignore Heliogram methods.
+# Ignore absence of method call parentheses in RSpec, gemspecs,
+# and Dangerfile, and ignore Heliogram methods.
 Style/MethodCallWithArgsParentheses:
   Exclude:
     - spec/**/*.rb
     - ./*.gemspec
+    - Dangerfile
   IgnoredMethods:
     - require
     - raise
