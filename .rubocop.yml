@@ -76,3 +76,11 @@ Style/MethodCallWithArgsParentheses:
     - card
     - gallery
     - before_handler
+    
+# --||----------------------
+#   || Danger
+# ==||======================
+
+Style/ImplicitRuntimeError:
+  Exclude:
+    - Dangerfile
