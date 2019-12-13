@@ -68,6 +68,7 @@ Style/MethodCallWithArgsParentheses:
   Exclude:
     - spec/**/*.rb
     - ./*.gemspec
+    - Gemfile
     - Dangerfile
   IgnoredMethods:
     - require
