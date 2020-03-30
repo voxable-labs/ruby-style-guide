@@ -2,19 +2,19 @@ AllCops:
   EnabledByDefault: true
   DisplayStyleGuide: true
   StyleGuideBaseURL: https://github.com/voxable-labs/voxable-style-guide
-  
+
 # Force table-style hash alignment.
-Layout/AlignHash:
+Layout/HashAlignment:
   EnforcedColonStyle: table
-  
+
 # Force equal sign alignment.
 Layout/ExtraSpacing:
   ForceEqualSignAlignment: true
-  
+
 # Don't require copyright notices
 Style/Copyright:
   Enabled: false
-  
+
 # Prefer keyword arguments to options hashes
 # https://github.com/voxable-labs/ruby-style-guide#no-optional-hash-params
 Style/OptionHash:
@@ -38,14 +38,10 @@ Style/DocumentationMethod:
 #   || RSpec
 # ==||======================
 
-# Ignore block length in RSPec.
+# Ignore block length in RSPec and hg blocks.
 Metrics/BlockLength:
   Exclude:
     - spec/**/*.rb
-    
-
-# Exclude hg blocks.
-Metrics/BlockLength:
   ExcludedMethods:
     - class_methods
     - dynamic
@@ -77,7 +73,7 @@ Style/MethodCallWithArgsParentheses:
     - card
     - gallery
     - before_handler
-    
+
 # --||----------------------
 #   || Danger
 # ==||======================
