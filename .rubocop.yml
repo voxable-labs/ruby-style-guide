@@ -11,6 +11,10 @@ Layout/HashAlignment:
 Style/HashSyntax:
   Exclude:
     - ./config/routes.rb
+  
+Style/StringHashKeys:
+  Exclude:
+    - ./config/routes.rb
 
 # Force equal sign alignment.
 Layout/ExtraSpacing:
