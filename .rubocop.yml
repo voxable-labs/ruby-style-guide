@@ -6,6 +6,11 @@ AllCops:
 # Force table-style hash alignment.
 Layout/HashAlignment:
   EnforcedColonStyle: table
+  
+# Don't overwrite routes, as this can change interpretation.
+Style/HashSyntax:
+  Exclude:
+    - ./config/routes.rb
 
 # Force equal sign alignment.
 Layout/ExtraSpacing:
