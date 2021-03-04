@@ -12,14 +12,14 @@ This repo's `.rubocop.yml` file encodes this style guide as a [RuboCop](https://
 
 ```yaml
 inherit_from:
-  - https://raw.githubusercontent.com/voxable-labs/ruby-style-guide/master/.rubocop.yml
+  - https://raw.githubusercontent.com/voxable/ruby-style-guide/master/.rubocop.yml
 ```
 
 You'll also want to add its cache file to your `.gitignore`:
 
 ```
 # RuboCop config cache file
-.rubocop-https---raw-githubusercontent-com-voxable-labs-ruby-style-guide-master--rubocop-yml
+.rubocop-https---raw-githubusercontent-com-voxable-ruby-style-guide-master--rubocop-yml
 ```
 
 If you need to bust this cache file to pick up the latest changes to the guide (which should happen automatically every 24 hours), you can simply delete the cache file from your project.
