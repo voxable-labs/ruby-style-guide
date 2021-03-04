@@ -51,7 +51,7 @@ Style/DocumentationMethod:
 Metrics/BlockLength:
   Exclude:
     - spec/**/*.rb
-  ExcludedMethods:
+  IgnoredMethods:
     - class_methods
     - dynamic
     - gallery
